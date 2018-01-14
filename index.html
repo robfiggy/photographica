@@ -1,3 +1,160 @@
 <!DOCTYPE html>
+<html lang="en">
+<style>
+body {margin: 0;}
+ul.topnav {
+    list-style-type: none;
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+ul.topnav li {float: center;}
+ul.topnav li a {
+    display: block;
+    color: rgb(255, 44, 160);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 1px 2px;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+ul.topnav li a:hover:not(.active) {background-color: rgb(0, 0, 0);}
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+h1 {
+    color: rgb(255, 44, 160);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px;
+}
+h2 {
+    color: aqua;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-indent: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 30px; 
+}
+p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+}
+body{
+    background-color: black;
+}
+img {
+    display: block;
+    border-style: ridge;
+    border-color: rgb(178, 205, 254);
+    border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+    padding: 6px;
+}
+.about {
+    width: 27em;
+    word-wrap: break-word;
+    text-align: auto;
+    margin: auto;
+}
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<p>Hello</p>
+  <title>Photography</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <h1>ROB FIGUEROA</h1>
+  <br>
+<ul class="topnav">
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<br>
+<figure class="half" style="display:flex">
+<img src="images/tahoe.JPG" alt="Lake Tahoe in Nevada"></img>
+<br>
+<img src="images/mountain.JPG" alt="Mountains in Nevada"></img>
+<br>
+</figure>
+
+<figure class="half" style="display:flex">
+<img src="images/snow forest.JPG" alt="Snow fall on trees"></img>
+<br>
+<img src="images/lake.JPG" alt="A lake in Athens, Georgia"></img>
+<br>
+</figure>
+
+<figure class="half" style="display:flex">
+<img src="images/red flower.JPG" alt="A red flower dangling in sunlight"></img>
+<br>
+<img src="images/wasp.JPG" alt="A wasp extracting food. It's a whole other world"></img>
+<br>
+</figure>
+
+<figure class="half" style="display:flex">
+<img src="images/plant.JPG" alt="A vivid green plant growing alongside a tree"></img>
+<br>
+<img src="images/athens.JPG" alt="Overview of downtown Athens, Georgia"></img>
+<br>
+</figure>
+
+<img src="images/building.JPG" alt="A building with nice architecture"></img>
+
+<a name="contact">
+    <h1>CONTACT</h1>
+    <p>ra.figueroa@outlook.com</p>
+    <p><a href="https://github.com/robfiggy">GitHub</r></p>
+    <p><a href="https://www.linkedin.com/in/robfigueroa/">LinkedIn</a></p>
+    <p>NYC</p>
+</a>
+<a name="about">
+    <h1>ABOUT</h1>
+    <p class="about">Originally from New England, I moved down to Georgia when I was 14. I studied at UGA until graduating in 2015.
+       Still unsure of what I wanted to do, I looked into computer programming. I've come back to the north to pursue
+       web and software development, as well as some photography and music on the side. Thank you for checking my page out!
+    </p>
+    <br>
+    <br>
+    </div>
+</a>
+
+<script>
+    jQuery(document).ready(function(){
+    $('h1').mousemove(function(e){
+     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+     $('h1').css('text-shadow', +rYP/50+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+   });
+});
+</script>
+</body>
+</html>
