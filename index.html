@@ -2,6 +2,7 @@
 <html lang="en">
 <style>
 body {margin: 0;}
+
 ul.topnav {
     list-style-type: none;
     font-family: Verdana;
@@ -10,7 +11,9 @@ ul.topnav {
     overflow: hidden;
     background-color: rgb(0, 0, 0);
 }
+
 ul.topnav li {float: center;}
+
 ul.topnav li a {
     display: block;
     color: rgb(255, 44, 160);
@@ -20,21 +23,28 @@ ul.topnav li a {
     text-decoration: none;
     font-family: 'Helvetica Neue', sans-serif;
 }
+
 ul.topnav li a:hover:not(.active) {background-color: rgb(0, 0, 0);}
+
 @media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-}
+    #container, #header, #content, #footer {
+        float: none;
+        width: auto;
+      }
+    }
+
 h1 {
     color: rgb(255, 44, 160);
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 100px;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
     padding: 5px;
+
 }
+
 h2 {
     color: aqua;
     font-family: 'Helvetica Neue', sans-serif;
@@ -47,18 +57,23 @@ h2 {
     top: 20px;
     left: 20px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 30px; 
 }
+
+
 p {
     color: white;
     font-family: 'Franklin Gothic Medium', sans-serif;
     text-align: center;
     word-wrap: break-word;
 }
+
 body{
     background-color: black;
 }
+
 img {
     display: block;
     border-style: ridge;
@@ -70,12 +85,16 @@ img {
     height: 40%;
     padding: 6px;
 }
+
+
 .about {
     width: 27em;
     word-wrap: break-word;
     text-align: auto;
     margin: auto;
 }
+
+
 </style>
 <head>
   <meta charset="utf-8">
@@ -92,7 +111,8 @@ img {
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
-  <h1>ROB FIGUEROA</h1>
+  <h1>ROB</h1> 
+  <h1>FIGUEROA</h1>
   <br>
 <ul class="topnav">
   <li><a href="#contact">Contact</a></li>
@@ -100,34 +120,34 @@ img {
 </ul>
 <br>
 <figure class="half" style="display:flex">
-<img src="images/tahoe.JPG" alt="Lake Tahoe in Nevada"></img>
+<img src="images/tahoe.jpg" alt="Lake Tahoe in Nevada"></img>
 <br>
-<img src="images/mountain.JPG" alt="Mountains in Nevada"></img>
-<br>
-</figure>
-
-<figure class="half" style="display:flex">
-<img src="images/snow forest.JPG" alt="Snow fall on trees"></img>
-<br>
-<img src="images/lake.JPG" alt="A lake in Athens, Georgia"></img>
+<img src="images/mountain.jpg" alt="Mountains in Nevada"></img>
 <br>
 </figure>
 
 <figure class="half" style="display:flex">
-<img src="images/red flower.JPG" alt="A red flower dangling in sunlight"></img>
+<img src="images/snow forest.jpg" alt="Snow fall on trees"></img>
 <br>
-<img src="images/wasp.JPG" alt="A wasp extracting food. It's a whole other world"></img>
+<img src="images/lake.jpg" alt="A lake in Athens, Georgia"></img>
 <br>
 </figure>
 
 <figure class="half" style="display:flex">
-<img src="images/plant.JPG" alt="A vivid green plant growing alongside a tree"></img>
+<img src="images/red flower.jpg" alt="A red flower dangling in sunlight"></img>
 <br>
-<img src="images/athens.JPG" alt="Overview of downtown Athens, Georgia"></img>
+<img src="images/wasp.jpg" alt="A wasp extracting food. It's a whole other world"></img>
 <br>
 </figure>
 
-<img src="images/building.JPG" alt="A building with nice architecture"></img>
+<figure class="half" style="display:flex">
+<img src="images/plant.jpg" alt="A vivid green plant growing alongside a tree"></img>
+<br>
+<img src="images/athens.jpg" alt="Overview of downtown Athens, Georgia"></img>
+<br>
+</figure>
+
+<img src="images/building.jpg" alt="A building with nice architecture"></img>
 
 <a name="contact">
     <h1>CONTACT</h1>
